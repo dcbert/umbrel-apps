@@ -3,7 +3,7 @@ id: openclaw
 name: OpenClaw
 tagline: The AI that actually does things
 category: ai
-version: "2026.5.7"
+version: "2026.5.27"
 port: 18789
 path: ""
 description: >-
@@ -39,21 +39,21 @@ gallery:
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  What's new in OpenClaw (v2026.5.6 → v2026.5.7):
-    - Fixed OpenAI Codex OAuth routing that was incorrectly rewritten in a previous update — if affected, run `openclaw models set openai-codex/gpt-5.5` to restore your setup
-    - Fixed plugin requests being rejected due to symbol metadata in fetch headers
-    - Fixed timed-out web fetch requests leaving Gateway tool lanes stuck active
-    - Fixed stale chat history being reused after session resets
-    - Fixed WhatsApp proactive messages to LID-addressed contacts creating ghost chats instead of delivering
-    - Fixed Telegram sender allowlists not being honored for DMs, groups, and native commands
-    - Fixed cron jobs with invalid stored model values causing errors
-    - Fixed Discord cross-channel agent messages misrouting channel IDs as DM targets
-    - Fixed long-lived channel sessions not rebuilding the skill list after skills change
-    - Added `openai/chat-latest` as an explicit model alias for the moving ChatGPT Instant API
-    - Added computed status field to cron CLI JSON output for easier external tooling
-    - Improved Discord voice capture with reduced choppiness and a configurable silence grace period
-    - Improved plugin publishing reliability with retries and post-publish version verification
-    - Improved Codex approval flow so safe commands can be reviewed before OpenClaw surfaces an approval prompt
-    - And much more. Full details at https://github.com/openclaw/openclaw/releases
+  This release strengthens security and content boundaries, including safer group
+  prompt handling, hostname normalization, protected runtime environment settings,
+  and stricter admin checks for sensitive approvals.
+
+
+  Codex app-server runs, provider/model discovery, Gateway performance, and visible
+  reply delivery are more reliable, with less hot-path rediscovery and better
+  recovery across startup, restart, and helper failures.
+
+
+  Telegram, iMessage, Slack, Matrix, Discord, Google Chat, DeepInfra, Pixverse,
+  VLLM, Anthropic, and OpenAI-compatible provider flows all receive fixes and
+  reliability improvements.
+
+
+  Full release notes can be found at https://github.com/openclaw/openclaw/releases/tag/v2026.5.27
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-apps/pull/4649

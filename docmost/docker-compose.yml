@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: docmost/docmost:0.80.2@sha256:0376e0cd5b82b5f7d221a537e33886c09d1523ca54dbda29c6100106b90ce4e9
+    image: docmost/docmost:0.90.1@sha256:665d9a522e10b6e919188ffa8d3baf6572f064569dbd5630fbe0605d5b91916f
     user: "1000:1000"
     depends_on:
       - db

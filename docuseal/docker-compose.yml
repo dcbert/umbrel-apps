@@ -5,7 +5,7 @@ services:
       APP_PORT: 3000
 
   server:
-    image: docuseal/docuseal:2.5.3@sha256:fa8d01c978fa9d2f51bc8250bfbbbb1ba843bcf198e94c84c62bf9f53f1beaaa
+    image: docuseal/docuseal:3.0.1@sha256:af8cdcd3a66b6e72dbcc0ccc2ca20e11fc23ac03b1eb042e8cfa48cc9b2695c8
     user: "1000:1000"
     depends_on:
       - db

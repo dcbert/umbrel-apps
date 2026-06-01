@@ -3,7 +3,7 @@ id: lobe-chat
 name: Lobe Hub
 tagline: Your self-hosted AI workspace for chat, agents, and knowledge
 category: ai
-version: "2.1.58"
+version: "2.2.1"
 port: 7455
 description: >-
   💬 Lobe Hub is a self-hosted AI workspace for conversations, agent teams,
@@ -36,17 +36,17 @@ defaultUsername: ""
 defaultPassword: ""
 dependencies: []
 releaseNotes: >-
-  This hotfix release ships the latest canary improvements for agents, onboarding, integrations, desktop/CLI workflows, and reliability.
+  This release adds heterogeneous platform agents for local and remote device execution, refreshes onboarding, and improves document/chat workflows.
 
 
   Key changes:
-    - Improved agent tasks, self-review proposal flows, sub-agent dispatch, scheduling, and TodoList behavior
-    - Polished home and onboarding flows, including daily brief links, input hints, and inline skill authorization
-    - Fixed Slack, Discord, slash-command, and gateway client-tool integration issues
-    - Improved desktop and CLI login/command detection, including Claude and Codex CLI handling on Windows
-    - Added reliability safeguards for web crawling, image processing, database pools, and inactive OIDC access
-    - Added the agent operations database table; self-hosted migrations run automatically on startup
+    - Added OpenClaw/Hermes platform agents with remote dispatch, device registration, and an execution target switcher
+    - Refreshed first-run onboarding with a streamlined first screen, agent picker, and improved welcome guidance
+    - Improved document previews, non-markdown document rendering, document tree multi-select, and per-agent topic management
+    - Added skill chips in the composer, slash-menu skill access, and project-level skill support
+    - Added DeepSeek V4 and Gemini 3.5 Flash model support, plus clearer model-runtime error handling
+    - Improved security and reliability, including safer credential handling, OAuth refresh-token fixes, Redis timeouts, and assistant-chain recursion guards
 
 
-  Full release notes are available at https://github.com/lobehub/lobehub/releases/tag/v2.1.58
+  Full release notes are available at https://github.com/lobehub/lobehub/releases/tag/v2.2.1
 path: ""

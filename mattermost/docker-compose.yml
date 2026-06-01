@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
   
   app:
-    image: alexlack/mattermost-app:v11.6.2@sha256:d11529b3cd819d8f9ae12fda60c306dc7b6d55c9344ff71ed3d07e23fc2197a7
+    image: alexlack/mattermost-app:v11.7.2@sha256:cfebce7e637c5e58acb6ca505a81d2c2b925312bef6988221aa911756e5613ba
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
@@ -32,7 +32,7 @@ services:
         condition: service_healthy
 
   db:
-    image: alexlack/mattermost-db:v11.6.2@sha256:2c9ca7bf024665bbf479ee3a58b99790f44c592e22d711593a64a105132acca2
+    image: alexlack/mattermost-db:v11.7.2@sha256:9556d6f6e10f9c92fc45ecf8b4d36c1d1d646bdb4c454d4e6c077e40bc89fba6
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m

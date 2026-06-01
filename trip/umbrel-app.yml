@@ -3,7 +3,7 @@ id: trip
 name: Trip
 tagline: Minimalist Map Tracker and Trip Planner
 category: files
-version: "1.44.0"
+version: "1.45.2"
 port: 8980
 description: >-
   🗺️ TRIP is a self-hostable minimalist Map tracker and Trip planner to visualize your points of interest (POI) and organize your next adventure details.
@@ -23,11 +23,11 @@ support: https://github.com/itskovacs/trip/issues
 submitter: itskovacs
 submission: https://github.com/getumbrel/umbrel-apps/pull/3830
 releaseNotes: >-
-  This update adds interface translations for English and French.
+  This update adds Dutch language support.
 
-  The release also introduces an occasional support dialog from the developer. The upstream release notes state that TRIP still has no telemetry, ads, or network interaction.
+  It also improves search focus and note modal behavior, and fixes a translation key and duplicate links.
 
-  Full release notes can be found at https://github.com/itskovacs/trip/releases/tag/1.44.0
+  Full release notes can be found at https://github.com/itskovacs/trip/releases/tag/1.45.2
 dependencies: []
 path: ""
 defaultUsername: ""

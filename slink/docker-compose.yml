@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: anirdev/slink:v1.11.2@sha256:bd8d41b3a5bd1f73e85921695d3b9de7aa39492ae53d7c0e8f01d4d0e318eafc
+    image: anirdev/slink:v1.11.6@sha256:bd3966434e94d718de332fb9c2278ec43f71413a1bcf9b395d9024322de49843
     user: "1000:1000"
     restart: on-failure
     environment:
